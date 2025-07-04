@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GiggleBaby Coin (GGBY)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #fff8dc, #fff);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    header {
+      background-color: #ffd93d;
+      padding: 20px;
+      box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      color: #333;
+    }
+    .logo {
+      margin-top: 30px;
+      width: 220px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .buttons a {
+      text-decoration: none;
+      color: white;
+      background-color: #ff8fab;
+      padding: 12px 24px;
+      border-radius: 10px;
+      margin: 10px;
+      display: inline-block;
+      font-weight: bold;
+    }
+    .section {
+      margin: 40px auto;
+      max-width: 800px;
+      padding: 20px;
+      background: #fff3cd;
+      border: 1px solid #ffeeba;
+      border-radius: 12px;
+    }
+    h2 {
+      color: #b35d00;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li::before {
+      content: "🚀 ";
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    input, textarea, button {
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #ff8fab;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #ff5d8f;
+    }
+    footer {
+      margin: 40px 0 20px;
+      font-size: 14px;
+      color: #888;
+    }
+    #airdrop-banner {
+      background: #ffef96;
+      padding: 15px;
+      color: #444;
+      font-weight: bold;
+      border-top: 2px dashed #f39c12;
+    }
+  </style>
+</head>
+<body>
+  <div id="airdrop-banner">
+    🚨 <span style="color: red;">Airdrop Aktif!</span> Lapor wallet ke <a href="https://t.me/GiggleBabyAdmin" target="_blank">@GiggleBabyAdmin</a> untuk dapat token GGBY gratis 💎
+  </div>
+
+  <header>
+    <h1>Welcome to GiggleBaby Coin 👶💰</h1>
+    <p>The happiest meme coin on Solana!</p>
+  </header>
+
+  <img src="https://cdn.discordapp.com/attachments/1245971702618032158/1258362435803281468/gigglebaby_logo_gold_coin.png" alt="GiggleBaby Logo" class="logo">
+
+  <div class="buttons">
+    <a href="https://x.com/GiggleBabyCoin" target="_blank">🌐 X (Twitter)</a>
+    <a href="https://t.me/GiggleBabyCoinOfficial" target="_blank">📣 Telegram</a>
+  </div>
+
+  <div class="section">
+    <h2>💖 Donasi untuk Pengembangan GGBY</h2>
+    <p>Kirim SOL ke dompet resmi kami:</p>
+    <code>8P16FBtSCutnvxMzzy34VcoV89c2ANiU41sNwqrSxefK</code>
+    <p><strong>Semua yang berdonasi akan mendapatkan airdrop token GGBY 💎!</strong></p>
+    <form id="donationForm">
+      <input type="text" id="nama" placeholder="Nama / Username (opsional)">
+      <input type="text" id="wallet" placeholder="Alamat Wallet Solana kamu" required>
+      <textarea id="pesan" placeholder="Pesan (opsional)" rows="3"></textarea>
+      <button type="submit">Kirim ke Admin Telegram</button>
+    </form>
+  </div>
+
+  <div class="section">
+    <h2>🎖 Daftar Pendonor GGBY</h2>
+    <p>Terima kasih untuk semua yang sudah mendukung proyek ini 🙏</p>
+    <ul>
+      <li>👤 TeungkuAgus | 💳 8P16...xefK | 💎 100,000 GGBY</li>
+      <li>👤 CryptoMama | 💳 4zA2...KDv8 | 💎 50,000 GGBY</li>
+      <li>👤 MoonBoy69 | 💳 2FKR...1xYp | 💎 20,000 GGBY</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>📊 Tokenomics</h2>
+    <ul>
+      <li>Total Supply: 1,000,000,000 GGBY</li>
+      <li>30% Airdrop to Donators & Community</li>
+      <li>25% Liquidity Pool</li>
+      <li>20% Development</li>
+      <li>15% Marketing</li>
+      <li>10% Team</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🗺️ Roadmap</h2>
+    <ul>
+      <li>✅ Launch Twitter & Telegram</li>
+      <li>✅ Logo & Branding</li>
+      <li>🚧 Web Launch & Form Donasi</li>
+      <li>🔜 Pump.fun Deployment</li>
+      <li>🔜 Airdrop & NFT Collaboration</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>⏳ Countdown to Launch</h2>
+    <div id="countdown" style="font-size: 1.5em; color: #d35400;"></div>
+  </div>
+
+  <div class="section">
+    <h2>📈 Live Token Chart</h2>
+    <iframe src="https://dexscreener.com/solana/INSERT_TOKEN_ADDRESS" height="400" width="100%" style="border:none;"></iframe>
+  </div>
+
+  <footer>
+    &copy; 2025 GiggleBaby Coin — Made on Solana. Powered by Chaos & Community.
+  </footer>
+
+  <script>
+    document.getElementById("donationForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const nama = document.getElementById("nama").value || "Anonim";
+      const wallet = document.getElementById("wallet").value;
+      const pesan = document.getElementById("pesan").value || "-";
+      const text = `📢 Donasi Baru untuk GiggleBaby Coin!%0A%0A👤 Nama: ${nama}%0A💳 Wallet: ${wallet}%0A📝 Pesan: ${pesan}`;
+      const telegramLink = `https://t.me/GiggleBabyAdmin?text=${text}`;
+      window.open(telegramLink, '_blank');
+    });
+
+    const launchDate = new Date("2025-07-10T00:00:00").getTime();
+    const countdown = document.getElementById("countdown");
+    setInterval(() => {
+      const now = new Date().getTime();
+      const distance = launchDate - now;
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }, 1000);
+  </script>
+
+  <!-- Optional AI Chat Bot Integration -->
+  <script src="//code.tidio.co/YOUR-TIDIO-CODE.js" async></script>
+</body>
+</html>
